@@ -16,7 +16,6 @@
             btnLookup = new Button();
             btnDelete = new Button();
             txtValue = new TextBox();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -73,21 +72,11 @@
             txtValue.KeyDown += txtValue_KeyDown;
             txtValue.KeyPress += txtValue_KeyPress;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1129, 194);
-            label1.Name = "label1";
-            label1.Size = new Size(296, 15);
-            label1.TabIndex = 5;
-            label1.Text = "E - Empty      O - Occupied     R - Runned       S - Shifted";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1448, 231);
-            Controls.Add(label1);
             Controls.Add(txtValue);
             Controls.Add(btnDelete);
             Controls.Add(btnLookup);
@@ -102,8 +91,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        private Label label1;
     }
 
 }
