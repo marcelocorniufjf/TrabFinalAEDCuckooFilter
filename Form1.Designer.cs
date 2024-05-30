@@ -24,7 +24,7 @@
             pictureBox1.Location = new Point(14, 14);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1411, 173);
+            pictureBox1.Size = new Size(983, 173);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -76,17 +76,19 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1448, 231);
+            ClientSize = new Size(1008, 231);
             Controls.Add(txtValue);
             Controls.Add(btnDelete);
             Controls.Add(btnLookup);
             Controls.Add(btnInsert);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             Name = "Form1";
             Text = "Cuckoo Filter - AED (Marcelo Corni Alves)";
+            KeyDown += Form1_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
